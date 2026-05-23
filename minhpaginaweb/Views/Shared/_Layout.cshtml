@@ -1,23 +1,19 @@
 ﻿<!DOCTYPE html>
-<html lang="pt-br">
-<head>
+<html lang="pt-br" class="h-100"> <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@ViewData["Title"] - minhpaginaweb</title>
-    
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
 </head>
-<body>
+<body class="d-flex flex-column h-100">
     <header>
         <nav class="navbar navbar-expand-sm navbar-light bg-white border-bottom box-shadow mb-3">
             <div class="container-fluid">
                 <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">minhpaginaweb</a>
-                
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                
                 <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between" id="navbarNav">
                     <ul class="navbar-nav flex-grow-1">
                         <li class="nav-item">
@@ -28,7 +24,7 @@
                         </li>
                         <li class="nav-item">
                             <a class="nav-link text-primary border border-primary rounded ms-sm-2 px-3" asp-controller="Aluno" asp-action="Index">
-                                Perfil do Aluno
+                                👤 Perfil do Aluno
                             </a>
                         </li>
                     </ul>
@@ -37,14 +33,14 @@
         </nav>
     </header>
 
-    <div class="container">
-        <main role="main" class="pb-3">
+    <main role="main" class="flex-shrink-0 flex-grow-1 d-flex align-items-center justify-content-center">
+        <div class="container text-center">
             @RenderBody()
-        </main>
-    </div>
+        </div>
+    </main>
 
-    <footer class="border-top footer text-muted">
-        <div class="container">
+    <footer class="footer mt-auto py-3 bg-light border-top text-muted">
+        <div class="container text-center">
             &copy; 2026 - minhpaginaweb - <a asp-controller="Home" asp-action="Privacy">Privacy</a>
         </div>
     </footer>
