@@ -15,6 +15,10 @@ namespace minhapaginaweb.Controllers
         public IActionResult Detalhes(int id)
         {
             ViewBag.Id = id;
+            ViewBag.Nome = "Luan"; 
+            ViewBag.Curso = "Análise e Desenvolvimento de Sistemas";
+            ViewBag.Semestre = "3º Semestre";
+
             return View();
         }
     }
