@@ -9,7 +9,7 @@ namespace minhapaginaweb.Controllers
             ViewBag.Nome = "Luan"; 
             ViewBag.Curso = "Análise e Desenvolvimento de Sistemas";
             ViewBag.Semestre = "3º Semestre";
-            return View();
+            return View("Index");
         }
 
         public IActionResult Detalhes(int id)
@@ -19,7 +19,7 @@ namespace minhapaginaweb.Controllers
             ViewBag.Curso = "Análise e Desenvolvimento de Sistemas";
             ViewBag.Semestre = "3º Semestre";
 
-            return View();
+            return View("Detalhes");
         }
     }
 }
